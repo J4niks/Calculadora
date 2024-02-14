@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/svg/calc_icon.svg">
+</head>
+<body>
+    <section class="calc">
+        <div class="tela">
+            <output id="resultado"></output>
+        </div>
+        <button id="zero" onclick="display('0')">0</button>
+        <button id="um" onclick="display('1')">1</button>
+        <button id="dois" onclick="display('2')">2</button>
+        <button id="tres" onclick="display('3')">3</button>
+        <button id="quatro" onclick="display('4')">4</button>
+        <button id="cinco" onclick="display('5')">5</button>
+        <button id="seis" onclick="display('6')">6</button>
+        <button id="sete" onclick="display('7')">7</button>
+        <button id="oito" onclick="display('8')">8</button>
+        <button id="nove" onclick="display('9')">9</button>
+        <button id="apagar" onclick="erase()">AC</button>
+        <button id="porcentagem" onclick="display('%')">%</button>
+        <button id="multiplicar" onclick="display('*')">*</button>
+        <button id="dividir" onclick="display('/')">/</button>
+        <button id="somar" onclick="display('+')">+</button>
+        <button id="subtrair" onclick="display('-')">-</button>
+        <button id="ponto" onclick="display('.')">.</button>
+        <button id="apagarUm" onclick="eraseOne('.')"> ⇢ </button>
+        <button id="calcular" onclick="resultado()">=</button>
+    </section>
+    <section class="social">
+        <img class="myPic" src="./assets/img/a.png">
+        <h1>Desenvolvido por Janiks Oliveira</h1>
+        <a class="socialItems" href="https://github.com/J4niks" target="_blank"><img src="./assets/svg/github_icon.svg">GitHub</a>
+        <a class="socialItems" href="https://linkedin.com/in/janiksoliveira/" target="_blank"><img src="./assets/svg/linkedin_icon.svg">LinkedIn</a>
+        <a class="socialItems" href="https://linktr.ee/janiksoliveira" target="_blank"><img src="./assets/svg/dots_icon.svg">Outros Links</a>
+    </section>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

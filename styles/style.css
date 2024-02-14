@@ -1,0 +1,215 @@
+html{
+    height: 100%;
+}
+body {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+}
+.calc {
+    background-color: aliceblue;
+    display: grid;
+    width: 30vw;
+    height: 85%;
+    border: 2px solid rgb(78, 205, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    grid-template-rows: 30% 14% 14% 14% 14% 14%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    'display display display display'
+    'ac porcentagem dividir multiplicar'
+    'sete oito nove subtrair'
+    'quatro cinco seis somar'
+    'um dois tres calcular '
+    'zero apagarUm ponto calcular'
+    ;
+}
+
+.tela{
+    background-color: rgb(201, 227, 250);
+    height: 100%;
+    grid-area: display;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+#resultado {
+    width: 100%;
+    max-height: 100%;
+    font-size: 2vw;
+    text-align: end;
+    margin-bottom: 2vh;
+    word-break: break-all;
+    overflow-y: scroll;
+}
+
+.calc button {
+    width: 90%;
+    height: 80%;
+    background: rgb(167, 234, 255);
+    border-radius: 10px;
+    font-size: 2vw;
+    align-self: center;
+    justify-self: center;
+    color: black;
+}
+
+.calc button:hover {
+    background: rgb(78, 205, 255);
+}
+
+#zero {
+    grid-area: zero;
+}
+#um {
+    grid-area: um;
+}
+#dois{
+    grid-area: dois;
+}
+#tres{
+    grid-area: tres;
+}
+#quatro{
+    grid-area: quatro;
+}
+#cinco{
+    grid-area: cinco;
+}
+#seis{
+    grid-area: seis;
+}
+#sete{
+    grid-area: sete;
+}
+#oito{
+    grid-area: oito;
+}
+#nove{
+    grid-area: nove;
+}
+#apagar {
+    grid-area: ac;
+}
+#porcentagem {
+    grid-area: porcentagem;
+}
+#multiplicar {
+    grid-area: multiplicar;
+}
+#dividir {
+    grid-area: dividir;
+}
+#somar {
+    grid-area: somar;
+}
+#subtrair {
+    grid-area: subtrair;
+}
+#ponto {
+    grid-area: ponto;
+}
+#calcular {
+    grid-area: calcular;
+    height: 90%;
+}
+#apagarUm {
+    grid-area: apagarUm;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.myPic {
+    width: 15vw;
+    border-radius: 10vw;
+    border: 2px solid rgb(78, 205, 255);
+}
+
+.social h1 {
+    font-size: 2vw;
+    color: aliceblue;
+}
+
+.socialItems {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.5vw;
+    padding: 1vw;
+    background-color: rgb(167, 234, 255);
+    color: black;
+    border-radius: 1vw;
+    border: 2px solid rgb(78, 205, 255);
+}
+
+.socialItems:hover{
+    background-color: rgb(78, 205, 255)
+}
+
+.socialItems img {
+    width: 2vw;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: aliceblue;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(167, 234, 255);
+    border-radius: 10px;
+}
+
+@media (width <= 900px){
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1vh;
+    }
+
+    .calc {
+        margin-top: 1vh;
+        width: 70vw;
+        height: 50%;
+    }
+    #resultado {
+        font-size: 6vw;
+    }
+    .calc button {
+        font-size: 4vw;
+    }
+
+    .social {
+        gap: 1vh;
+    }
+
+    .myPic {
+        width: 30vw;
+        border-radius: 40vw;
+    }
+
+    .social h1 {
+        font-size: 4vw;
+    }
+    
+    .socialItems {
+        font-size: 4vw;
+    }
+
+    .socialItems img {
+        width: 4vw;
+    }
+}
